@@ -1,0 +1,104 @@
+/* Set height = 100% to make the background image take up the whole screen when viewing on mobile */
+/* Omitting this will cause the document to end in the middle of the screen,
+since that's where the <body> tag ends
+-> not desired */
+html {
+    height: 100%;
+}
+
+body {
+    background: url('https://source.unsplash.com/BCLyHnC8Prk') no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Lato;
+}
+
+/* Navigation bar background */
+.navbar-default {
+    background-color: #EFEFEF;
+}
+
+/* Header -> Brand */
+.navbar-default .navbar-header a.navbar-brand {
+    color: #080706;
+}
+/* Effect when hover or focus */
+.navbar-default .navbar-header a.navbar-brand:hover,
+.navbar-default .navbar-header a.navbar-brand:focus {
+  color: #594D46;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #080706;
+}
+
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+  background-color: #594D46;
+}
+
+/* Navigation bar items */
+.navbar-default .navbar-nav > li > a {
+    color: #080706;
+}
+/* Effect when hover or focus */
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #594D46;
+}
+/* active items */
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #594D46;
+}
+
+.navbar__icon--mobile {
+    display: none;
+}
+
+@media screen and (max-width: 750px) {
+    .navbar__icon--mobile {
+        display: inline-block;
+    }
+}
+
+#header {
+    padding-top: 25%;
+    text-align: center;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+h1, h3 {
+    color: #EFEFEF;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 5em;
+}
+
+.btn-default {
+    background-color: #EFEFEF;
+    color: #080706;
+}
+
+.btn-default:focus,
+.btn-default.focus {
+  color: #594D46;
+  background-color: #e6e6e6;
+  border-color: #8c8c8c;
+}
+.btn-default:hover {
+  color: #594D46;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+
+hr {
+    width: 35%;
+    border-top: 1px solid #F8F8F8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
