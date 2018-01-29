@@ -7,14 +7,18 @@
     <meta name="author" content="Giang Vu">
     <meta name="keywords" content="laptop,consultancy">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <!-- Load Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
+    <!-- Load FontAwesome -->
     <script src="https://use.fontawesome.com/a772072865.js"></script>
-    <link rel="stylesheet" href="topLap.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/topLap.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50"> <!-- Enable BS Scrollspy -->
     <!-- Navigation bar -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -31,32 +35,32 @@
             <div class="collapse navbar-collapse" id="navbar-content">
                 <!-- Navbar content on the left -->
                 <ul class="nav navbar-nav navbar-left">
-                    <li class="active">
-                        <a href="#">
+                    <li>
+                        <a href="#home">
                             <i class="fa fa-home" aria-hidden="true"></i>
                             Home
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#about">
                             <i class="fa fa-info-circle" aria-hidden="true"></i>
                             About
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#faq">
                             <i class="fa fa-info-circle" aria-hidden="true"></i>
                             FAQ
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#contact">
                             <i class="fa fa-phone" aria-hidden="true"></i>
                             Contact
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="#donate">
                             <i class="fa fa-usd" aria-hidden="true"></i>
                             Donate
                         </a>
@@ -81,21 +85,44 @@
         </div>
     </nav>
 
-    <!-- Header -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div id="header">
-                    <h1>topLap</h1>
-                    <h3>Where you'll find your perfectly matched laptop</h3>
-                    <hr>
-                    <button class="btn btn-default btn-lg">
-                        <i class="fa fa-laptop" aria-hidden="true"></i>
-                        Get Started
-                    </button>
+    <!-- Home section -->
+    <div id="home">
+        <div class="container">
+            <div class="row">
+                <!-- Center the content -->
+                <div class="col-lg-12">
+                    <div id="header">
+                        <h1>topLap</h1>
+                        <h3>Where you'll find your perfectly matched laptop</h3>
+                        <hr>
+                        <button class="btn btn-default btn-lg">
+                            <i class="fa fa-laptop" aria-hidden="true"></i>
+                            Get Started
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- About section -->
+    <div id="about">
+        <p>about</p>
+    </div>
+
+    <!-- FAQ section -->
+    <div id="faq">
+        <p>FAQ</p>
+    </div>
+
+    <!-- Contact section -->
+    <div id="contact">
+        <p>Contact</p>
+    </div>
+
+    <!-- Donate section -->
+    <div id="donate">
+        <p>Donate</p>
     </div>
 
     <!-- JQuery -->
@@ -104,8 +131,8 @@
     <!-- Bootstrap JS -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
-    <!-- My JS -->
-    <script src="topLap.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/topLap.js"></script>
 </body>
 
 </html>
