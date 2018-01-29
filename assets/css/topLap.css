@@ -9,9 +9,6 @@ html {
 }
 
 body {
-    background: url('https://source.unsplash.com/BCLyHnC8Prk') no-repeat;
-    background-size: cover;
-    background-position: center;
     font-family: Lato;
 }
 /* */
@@ -31,9 +28,15 @@ body {
 /* */
 
 
-/* Header */
+/* Home */
+div#home {
+    background: url('https://source.unsplash.com/BCLyHnC8Prk') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 #header {
-    padding-top: 25%;
+    padding: 25% 0;
     text-align: center;
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
                  0px 8px 13px rgba(0,0,0,0.1),
@@ -56,3 +59,29 @@ hr {
 }
 /* */
 
+/* About */
+div#about {
+    height: 500px;
+}
+/* */
+
+
+/* FAQ */
+div#faq {
+    height: 500px;
+}
+/* */
+
+
+/* Contact */
+div#contact {
+    height: 500px;
+}
+/* */
+
+
+/* Donate */
+div#donate {
+    height: 500px;
+}
+/* */
